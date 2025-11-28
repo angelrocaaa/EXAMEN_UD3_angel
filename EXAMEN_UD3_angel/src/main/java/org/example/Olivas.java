@@ -33,7 +33,7 @@ public class Olivas {
             interno:
             for (int j = 0; j < matriz[i].length; j++) {
                 matriz[i][j] = Integer.parseInt(filas[j]);
-                if (matriz[i][j] > 50 && matriz[i][j] < 1) {
+                if (matriz[i][j] > 50 || matriz[i][j] < 1) {
                     System.out.println("ERROR. Número mayor que 50 o menos que 1. Vuelve a introduce la fila");
                     i--;
                     continue externo;
